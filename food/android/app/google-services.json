@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "614646448256",
+    "project_id": "chattesting-8a506",
+    "storage_bucket": "chattesting-8a506.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:614646448256:android:cb0bb9703e0ffe5a1c6665",
+        "android_client_info": {
+          "package_name": "com.example.food"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZTzX1TSmXGUSdsDhmmtCYHKXniSOjYAk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
