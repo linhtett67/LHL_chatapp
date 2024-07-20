@@ -6,19 +6,17 @@ class FirebaseApi {
 
   // fnction to initalize notifications
   Future<String?> initNotification() async {
-    // request permission
+  try {
     await _firebaseMessaging.requestPermission();
-
-    // fetch the FCM token for this device
     print("start");
     final fCMToken = await _firebaseMessaging.getToken();
     print("done");
-
-    // print the token 
     print('Token: $fCMToken');
-
-    // return the token
     return fCMToken;
+  } catch (e) {
+    print('Error initializing Firebase Messaging: $e');
+    return null;
+  }
   }
 
   // function to handle receieved messages
