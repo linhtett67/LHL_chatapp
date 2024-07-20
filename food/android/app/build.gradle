@@ -1,11 +1,8 @@
 plugins {
-    id 'com.android.application'
-    id 'kotlin-android'
-    id 'com.google.gms.google-services'
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
 }
-
-// Flutter's configuration for Gradle
-apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 def localProperties = new Properties()
 def localPropertiesFile = rootProject.file('local.properties')
@@ -64,4 +61,5 @@ flutter {
 
 dependencies {
     // Add your dependencies here if any
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.23"
 }
