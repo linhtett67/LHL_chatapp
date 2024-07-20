@@ -10,8 +10,10 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
+  // Get fcm token
   String? token = await FirebaseApi().initNotification();
 
+  // Make the token universally accessible through provider
   runApp(
     MultiProvider(
       providers: [
